@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>T-SquareF</title>
+    <link rel = "icon" href = "https://github.com/T-SquareF/superdeals/blob/master/circle-cropped.png?raw=true" 
+        type = "image/x-icon"> 
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+        .menubar{
+            text-decoration: none;
+            background-color: black;
+            width: 100%;
+                }
+                .menubar a img{
+                 border: white;
+                 border-width: 5px;
+            border-color: white;
+            border-radius: 30px;
+                } 
+               
+        .option{
+            color:white;
+            font-weight: bold;
+        }
+        .option:hover{
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 7px;
+        }
+        .option ham{
+
+                color:white;
+        }
+        .items ul{
+            list-style-type: none;
+        }
+        
+
+
+.navbar-toggler-icon{
+    color: white;
+    border-radius: 15px;
+    background-color: white;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+}
+.newitem p{
+  font-family: Verdana, Geneva, Tahoma, sans-serife;
+          font-weight: bold;
+          font-size: 1rem;
+          background-color:wheat;
+          color:black;
+          font-size: 23px;
+
+        }
+        .newitem iframe{
+          text-align: center;
+        }
+        .newitem{
+          width: auto;
+          text-align: center;
+          justify-content: center;
+        }
+        .newitem img{
+        width: 100%;
+        height:200px;
+        border-style:2px  black solid;
+         
+        }
+        .footer{
+              text-align: center;
+              justify-content: center;
+              font-weight: bold;
+              background-color: black;
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .footer a{
+              text-decoration: none;
+              color: white;
+        }
+        @media only screen and (max-width:400px){
+          .menubar{
+            text-decoration: none;
+            background-color: black;
+            background-size: cover;
+            width: auto;
+                }
+          .menubar span{
+            font-size: 1rem;
+          }
+          .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 0.7rem;
+    line-height: 1;
+    background-color: white;
+    border: 1px solid blackt;
+    border-radius: .25rem;
+    text-align: center;
+    justify-content: center;
+}
+        .btn-outline-success:hover {
+        
+
+          text-align: center;
+  justify-content: center;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg menubar">
+        <a class="navbar-brand " href="#"><span style="color:white; font-weight:bold;"><img src="logo.jpg" width="50px" height="50px">     T-SquareF-Amazon Amazing Deals</span></a>
+        <button class="navbar-toggler ham" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon btn-outline-success ham"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="rakhi_sale.html"><span style="background-color: red; padding:7px; color:rgb(255, 254, 254); border-radius: 15px; font-weight: bold;">#Trending - Rakhis</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link option" href="#elect">Electronics<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link option" href="#beauty">Home_Decor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link option" href="#books">Books</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      <div class="newitem">
+      <p id="elect">Electronic Accessories|Samrtphones</p>
+        <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07HGN617M&asins=B07HGN617M&linkId=9e4e43b3a399eed612de46b9524167db&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B071Z8M4KX&asins=B071Z8M4KX&linkId=0994f92b82ad7d31e3503eeb317d40b0&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B071Z8M4KX&asins=B071Z8M4KX&linkId=0994f92b82ad7d31e3503eeb317d40b0&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B08BPHPNCT&asins=B08BPHPNCT&linkId=d7a308d0426b22201fcc743e5d75ab67&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07QJYB8BC&asins=B07QJYB8BC&linkId=b74df600c2ad0c4687fa4cf6674dcb70&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07GQD4K6L&asins=B07GQD4K6L&linkId=f03ab78036fe5b93b00c05449f7a95bf&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07S9S86BF&asins=B07S9S86BF&linkId=948a4b6d2ca4621828aa8154d06a6357&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07MZQ5F8S&asins=B07MZQ5F8S&linkId=092a66751834ecba3d6dbcab31a13363&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+      
+    <br><br>
+    <p id="beauty">Home | Health | Beauty</p>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B0866JTZXN&asins=B0866JTZXN&linkId=4ff2a3056128a3e98bf61dc67377cdae&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B01CJW6PFK&asins=B01CJW6PFK&linkId=987a3e16a9bf300e2ab83eea21332d1f&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B08779GB46&asins=B08779GB46&linkId=18352c587f81f5dc6561b77393a99b05&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe> 
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B0711SD5RP&asins=B0711SD5RP&linkId=ed88a67fc9104652e5865c904ac698c0&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B01LNA2MQK&asins=B01LNA2MQK&linkId=575bf897030746e6dba5f2741ba48d1b&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B085LPXF93&asins=B085LPXF93&linkId=bb2a4c91fe1110f38dc2b231701828c2&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+      
+    <br><br>
+    <p id="books">Reading | Books</p>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=9387894037&asins=9387894037&linkId=7be5af863d9ceb95c170949adeeaae82&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=1846041244&asins=1846041244&linkId=ac5fb17f10796791b80a0a6b54348f44&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=178633089X&asins=178633089X&linkId=aaa0348340e038405a6b122954ebadc2&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=0099590085&asins=0099590085&linkId=a30788603708ba61ebad772e4552ef1d&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=8172234988&asins=8172234988&linkId=c1e706225e56d9b4f03dc43f15838eb8&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=1612680194&asins=1612680194&linkId=4687367f4aa1498ea40c3c1ac7b749a1&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=0143450832&asins=0143450832&linkId=f89939f391db07d550878ebe68e3c889&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=817992162X&asins=817992162X&linkId=9a14dd016dae73b1dbc77fbd9b70ec99&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=8179922324&asins=8179922324&linkId=68505ac7bb62a72bb7269f9feec84587&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=9387944891&asins=9387944891&linkId=fb7803e0a5b0b1c9dc796f9d465d42e4&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=9351772071&asins=9351772071&linkId=5b6d1458087786f60f7435a7e20a157b&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=0449214923&asins=0449214923&linkId=ff8e36d4867b439b5697002c7bf020c3&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=0984782850&asins=0984782850&linkId=7877e0f2104c16e9c0656b90d8601882&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <br><br>
+    <p>Jewellery | Festival content | Rakhi</p>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07FC6VFYG&asins=B07FC6VFYG&linkId=9c77c253fa28bb3454e5094cc3a5193b&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07F8WGYG6&asins=B07F8WGYG6&linkId=25e89585576ec66c1e686246dc261b1f&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07W5QB1S4&asins=B07W5QB1S4&linkId=fe1c93339c14dcc3d59417965a6ed101&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B0816Y5WVM&asins=B0816Y5WVM&linkId=57c57fb3e91d71e086f8a08017149a75&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe> 
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07FCQRNHG&asins=B07FCQRNHG&linkId=4c35599ef7ae987f53bea63f80abefdc&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07FM8DDGS&asins=B07FM8DDGS&linkId=552b39c3e18b62d631bd3b66d018d8e4&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B08BQJ3WGS&asins=B08BQJ3WGS&linkId=0faa9159267d3c2d03973e5b6eba9717&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B0893D3BKS&asins=B0893D3BKS&linkId=2fdbaa00cafd8c4be0aac9ef91cc3eab&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07VJC4HMW&asins=B07VJC4HMW&linkId=2ebcae9561398673757026ef8b53c8c2&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B08542KQHB&asins=B08542KQHB&linkId=27ac430c3160e62fbcc93deba3ec86f4&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07VQ71BJF&asins=B07VQ71BJF&linkId=0214362ccb2389ee07e31f4799a17e75&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07TX1QTJ3&asins=B07TX1QTJ3&linkId=078d7eb28a568edca83262d2b43915c6&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B0847R3SHS&asins=B0847R3SHS&linkId=e32f18ef403b39e126f0922c5f9e9e30&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <iframe style="width:160px;height:280px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tsquare-21&marketplace=amazon&region=IN&placement=B07PHKD63B&asins=B07PHKD63B&linkId=797a5e4b0c7c1cd9f62fa3203d95adff&show_border=true&link_opens_in_new_window=true&price_color=050000&title_color=0066c0&bg_color=faf5f5">
+    </iframe>
+    <p>Amazon Prime - Great Deal | Movies | Original TV Shows | Fast Delivery<br> (Click on Image to get Amazon Prime)</p>
+    <a href="https://www.amazon.in/amazonprime/ref=as_li_ss_tl?_encoding=UTF8&primeCampaignId=prime_assoc_FT_IN&linkCode=ll2&tag=tsquare-21&linkId=b36f5008404077d954abfe04ede11a2b&language=en_IN"><img src="prime.jpg"></img></a>
+      </div>
+
+<div class="footer">
+&#169;2020 : <a href="index.html">T-SquareF</a>
+</div>    
+</body>
+</html>
